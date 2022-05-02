@@ -1,0 +1,120 @@
+/* DARK MODE STUFF */
+:root {
+  --bg: #f8f8ff;
+  --text: #454545;
+}
+
+#color-mode:checked ~ .color-scheme-wrapper {
+  --bg: #121212;
+  --text: #f8f8ff;
+}
+
+.color-scheme-wrapper {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+#color-mode {
+  display: none;
+}
+
+.light-mode-hide {
+  display: none;
+}
+
+.dark-mode-hide {
+  background: #121212;
+  color: #f8f8ff;
+  padding: 3px;
+}
+
+#color-mode:checked ~ label .dark-mode-hide {
+  display: none;
+}
+
+#color-mode:checked ~ label .light-mode-hide {
+  display: initial;
+  color: #f8f8ff;
+}
+
+.dark-mode-toggle {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 18px;
+}
+
+.dark-mode-toggle span {
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  position: relative;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.color-scheme-wrapper {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  margin-top: -10%;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 600px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #7575ff;
+}
+
+a:hover {
+  color: #ff7575;
+}
+
+p {
+  font-size: 18px;
+}
+
+.description {
+  margin-bottom: 60px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.projects {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 15px;
+}
